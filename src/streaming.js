@@ -173,14 +173,6 @@
             $("body").css("position", "");
         });
 
-        return this.css({
-            title: settings.title,
-            content: settings.content,
-            footer: settings.footer,
-            radiusBorder: settings.radiusBorder,
-            fontSize: settings.fontSize
-        });
-
     };
 
 }(jQuery));
