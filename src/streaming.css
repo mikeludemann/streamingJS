@@ -27,26 +27,34 @@ body {
     bottom: 10px;
     right: 10px;
     overflow: auto;
-
-    /*margin-top: -100px;
-    margin-left: -100px;*/
 }
 
 .modal-header {
     border-bottom: 1px solid #000;
     padding: 15px;
     min-height: calc(5vh);
+    position: fixed;
+    width: 89.5%;
+    top: 1;
 }
 
 .modal-content {
-    padding: 15px;
-    min-height: calc(70vh);
+    padding: 4px 15px;
+    max-height: calc(70vh);
+    margin-top: 60px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: absolute;
+    width: 100%;
 }
 
 .modal-footer {
     border-top: 1px solid #000;
     padding: 15px;
     min-height: calc(5vh);
+    position: fixed;
+    width: 89.5%;
+    bottom: 0;
 }
 
 .close {
@@ -56,7 +64,7 @@ body {
     font-weight: bold;
     position: absolute;
     right: 15px;
-    top: 5px;
+    top: 10px;
 }
 
 .close:hover,
@@ -117,4 +125,5 @@ a {
 
 .box {
     padding: 0 0 15px 0;
+    position: relative;
 }
